@@ -4,6 +4,7 @@
 //
 //  Created by 김세령 on 10/17/26.
 //
+// 제출용 실습
 
 import SwiftUI
 
@@ -44,6 +45,15 @@ struct InstagramSearchView: View {
     private var searchBar: some View {
         HStack(spacing: 13) {
             TextField("검색", text: $searchText)
+                .padding(.horizontal, 15)
+                .frame(maxWidth: .infinity)
+                .frame(height: 36)
+                .background(Color(.gray100))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .overlay {
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(.gray200, lineWidth: 1)
+                    }
 
             Image("Save")
                 .resizable()

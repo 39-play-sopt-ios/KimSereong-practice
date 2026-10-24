@@ -1,13 +1,14 @@
 //
-//  ChatView.swift
+//  InstagramMessageView.swift
 //  SOPT39-Seminar
 //
 //  Created by 김세령 on 10/17/26.
 //
+// 제출용 실습
 
 import SwiftUI
 
-struct ChatView: View {
+struct InstagramMessageView: View {
     @State private var viewModel = ChatViewModel()
 
     var body: some View {
@@ -19,6 +20,7 @@ struct ChatView: View {
                 )
                 .listRowBackground(Color.white)
         }
+        .listStyle(.plain)
         .environment(\.defaultMinListRowHeight, 72)
         .scrollContentBackground(.hidden)
         .background(.white)
@@ -26,5 +28,5 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView()
+    InstagramMessageView()
 }
