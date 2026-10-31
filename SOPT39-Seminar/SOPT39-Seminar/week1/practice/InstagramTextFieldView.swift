@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct InstagramTextFieldView: View {
-    
     @State private var email = ""
     @State private var password = ""
     
@@ -85,7 +84,6 @@ private struct InstagramTextFieldStyle: ViewModifier {
                     .stroke(.gray.opacity(0.1), lineWidth: 0.5)
             }
             .padding(.horizontal, 16)
-        
     }
 }
 

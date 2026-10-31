@@ -16,12 +16,14 @@ struct BottomView: View {
                 Label("인사하기", systemImage: "hand.wave.fill")
             }
             .buttonStyle(.borderedProminent)
-            
-            Button(action: signIn) {
+                        
+            Button {
+                signIn()
+            } label: {
                 Text("Sign In")
             }
             .buttonStyle(.bordered)
-            
+
             Button {
                 print("프로필 열기")
             } label: {

@@ -66,7 +66,7 @@ struct InstagramMainView: View {
             }
         }
         .sheet(isPresented: $showAccountSwitcher) {
-            VStack() {
+            VStack(alignment: .center, spacing: nil) {
                 Text("계정 전환")
                     .font(.system(size: 18, weight: .semibold))
                 
